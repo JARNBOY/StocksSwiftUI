@@ -17,6 +17,8 @@
 		FB6FC4C12761E6370043FA17 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6FC4C02761E6370043FA17 /* WebService.swift */; };
 		FB6FC4C42761E65F0043FA17 /* StockListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6FC4C32761E65F0043FA17 /* StockListViewModel.swift */; };
 		FB6FC4C62761E66F0043FA17 /* StockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6FC4C52761E66F0043FA17 /* StockViewModel.swift */; };
+		FB6FC4C82761F84D0043FA17 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6FC4C72761F84D0043FA17 /* Article.swift */; };
+		FB6FC4CA2761FCD50043FA17 /* NewArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6FC4C92761FCD50043FA17 /* NewArticleViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		FB6FC4C02761E6370043FA17 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		FB6FC4C32761E65F0043FA17 /* StockListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListViewModel.swift; sourceTree = "<group>"; };
 		FB6FC4C52761E66F0043FA17 /* StockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewModel.swift; sourceTree = "<group>"; };
+		FB6FC4C72761F84D0043FA17 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		FB6FC4C92761FCD50043FA17 /* NewArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewArticleViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				FB6FC4BD2761E6080043FA17 /* Stock.swift */,
+				FB6FC4C72761F84D0043FA17 /* Article.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -113,6 +118,7 @@
 			children = (
 				FB6FC4C32761E65F0043FA17 /* StockListViewModel.swift */,
 				FB6FC4C52761E66F0043FA17 /* StockViewModel.swift */,
+				FB6FC4C92761FCD50043FA17 /* NewArticleViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -189,9 +195,11 @@
 			files = (
 				FB6FC4C12761E6370043FA17 /* WebService.swift in Sources */,
 				FB6FC4C42761E65F0043FA17 /* StockListViewModel.swift in Sources */,
+				FB6FC4C82761F84D0043FA17 /* Article.swift in Sources */,
 				FB6FC4A62761AA320043FA17 /* ContentView.swift in Sources */,
 				FB6FC4BB2761E4750043FA17 /* StockListView.swift in Sources */,
 				FB6FC4B92761DC500043FA17 /* SearchView.swift in Sources */,
+				FB6FC4CA2761FCD50043FA17 /* NewArticleViewModel.swift in Sources */,
 				FB6FC4BE2761E6080043FA17 /* Stock.swift in Sources */,
 				FB6FC4A42761AA320043FA17 /* StocksSwiftUIApp.swift in Sources */,
 				FB6FC4C62761E66F0043FA17 /* StockViewModel.swift in Sources */,
