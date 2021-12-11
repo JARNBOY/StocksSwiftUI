@@ -33,11 +33,15 @@ struct ContentView: View {
                     .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 0))
                     .offset(y: -350)
                 
-                SearchView(searchTerm: self.$stockListVM.searchTerm )
-                    .offset(y: -300)
                 
                 StockListView(stocks: filteredStocks)
                     .offset( y: 150)
+                
+                SearchView(searchTerm: self.$stockListVM.searchTerm )
+                    .offset(y: -300)
+                
+                NewsArticleView(newsArticles: self.stockListVM.news)
+                    .offset(y:500)
             }
             .navigationTitle("Stocks")
         }.edgesIgnoringSafeArea(Edge.Set(.bottom))

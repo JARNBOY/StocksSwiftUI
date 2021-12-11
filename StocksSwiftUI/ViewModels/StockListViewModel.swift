@@ -11,7 +11,7 @@ class StockListViewModel:ObservableObject{
     
     @Published var searchTerm:String = ""
     @Published var stocks:[StockViewModel] = [StockViewModel]()
-    @Published var articles:[NewArticleViewModel] = [NewArticleViewModel]()
+    @Published var news:[NewsArticleViewModel] = [NewsArticleViewModel]()
     func load(){
         fetchNew()
         fetchStocks()
@@ -32,7 +32,7 @@ class StockListViewModel:ObservableObject{
         WebService().getTopNews { news in
             if let news = news{
                 DispatchQueue.main.async {
-                    self.articles = news.map(NewArticleViewModel.init)
+                    self.news = news.map(NewsArticleViewModel.init)
                 }
                 
             }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct NewArticleViewModel{
+struct NewsArticleViewModel{
     let articles:Article
     
     var imageURL:String{

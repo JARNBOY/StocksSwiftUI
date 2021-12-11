@@ -18,7 +18,10 @@
 		FB6FC4C42761E65F0043FA17 /* StockListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6FC4C32761E65F0043FA17 /* StockListViewModel.swift */; };
 		FB6FC4C62761E66F0043FA17 /* StockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6FC4C52761E66F0043FA17 /* StockViewModel.swift */; };
 		FB6FC4C82761F84D0043FA17 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6FC4C72761F84D0043FA17 /* Article.swift */; };
-		FB6FC4CA2761FCD50043FA17 /* NewArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6FC4C92761FCD50043FA17 /* NewArticleViewModel.swift */; };
+		FB6FC4CA2761FCD50043FA17 /* NewsArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6FC4C92761FCD50043FA17 /* NewsArticleViewModel.swift */; };
+		FB6FC4CC2762005D0043FA17 /* NewArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6FC4CB2762005D0043FA17 /* NewArticleView.swift */; };
+		FB6FC4CF2764B1580043FA17 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = FB6FC4CE2764B1580043FA17 /* URLImage */; };
+		FB6FC4D12764B1580043FA17 /* URLImageStore in Frameworks */ = {isa = PBXBuildFile; productRef = FB6FC4D02764B1580043FA17 /* URLImageStore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +37,8 @@
 		FB6FC4C32761E65F0043FA17 /* StockListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListViewModel.swift; sourceTree = "<group>"; };
 		FB6FC4C52761E66F0043FA17 /* StockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewModel.swift; sourceTree = "<group>"; };
 		FB6FC4C72761F84D0043FA17 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
-		FB6FC4C92761FCD50043FA17 /* NewArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewArticleViewModel.swift; sourceTree = "<group>"; };
+		FB6FC4C92761FCD50043FA17 /* NewsArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArticleViewModel.swift; sourceTree = "<group>"; };
+		FB6FC4CB2762005D0043FA17 /* NewArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewArticleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +46,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB6FC4D12764B1580043FA17 /* URLImageStore in Frameworks */,
+				FB6FC4CF2764B1580043FA17 /* URLImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +98,7 @@
 			children = (
 				FB6FC4B82761DC500043FA17 /* SearchView.swift */,
 				FB6FC4BA2761E4750043FA17 /* StockListView.swift */,
+				FB6FC4CB2762005D0043FA17 /* NewArticleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -118,7 +125,7 @@
 			children = (
 				FB6FC4C32761E65F0043FA17 /* StockListViewModel.swift */,
 				FB6FC4C52761E66F0043FA17 /* StockViewModel.swift */,
-				FB6FC4C92761FCD50043FA17 /* NewArticleViewModel.swift */,
+				FB6FC4C92761FCD50043FA17 /* NewsArticleViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -139,6 +146,10 @@
 			dependencies = (
 			);
 			name = StocksSwiftUI;
+			packageProductDependencies = (
+				FB6FC4CE2764B1580043FA17 /* URLImage */,
+				FB6FC4D02764B1580043FA17 /* URLImageStore */,
+			);
 			productName = StocksSwiftUI;
 			productReference = FB6FC4A02761AA320043FA17 /* StocksSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -167,6 +178,9 @@
 				Base,
 			);
 			mainGroup = FB6FC4972761AA320043FA17;
+			packageReferences = (
+				FB6FC4CD2764B1580043FA17 /* XCRemoteSwiftPackageReference "url-image" */,
+			);
 			productRefGroup = FB6FC4A12761AA320043FA17 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -199,7 +213,8 @@
 				FB6FC4A62761AA320043FA17 /* ContentView.swift in Sources */,
 				FB6FC4BB2761E4750043FA17 /* StockListView.swift in Sources */,
 				FB6FC4B92761DC500043FA17 /* SearchView.swift in Sources */,
-				FB6FC4CA2761FCD50043FA17 /* NewArticleViewModel.swift in Sources */,
+				FB6FC4CC2762005D0043FA17 /* NewArticleView.swift in Sources */,
+				FB6FC4CA2761FCD50043FA17 /* NewsArticleViewModel.swift in Sources */,
 				FB6FC4BE2761E6080043FA17 /* Stock.swift in Sources */,
 				FB6FC4A42761AA320043FA17 /* StocksSwiftUIApp.swift in Sources */,
 				FB6FC4C62761E66F0043FA17 /* StockViewModel.swift in Sources */,
@@ -405,6 +420,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FB6FC4CD2764B1580043FA17 /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FB6FC4CE2764B1580043FA17 /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB6FC4CD2764B1580043FA17 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+		FB6FC4D02764B1580043FA17 /* URLImageStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB6FC4CD2764B1580043FA17 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImageStore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FB6FC4982761AA320043FA17 /* Project object */;
 }
